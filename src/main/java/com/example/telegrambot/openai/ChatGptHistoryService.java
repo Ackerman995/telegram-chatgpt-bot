@@ -20,9 +20,7 @@ public class ChatGptHistoryService {
         return Optional.ofNullable(chatHistoryMap.get(userId));
     }
 
-    public void createHistory(
-            Long userId
-    ) {
+    public void createHistory(Long userId) {
         chatHistoryMap.put(userId, new ChatHistory(new ArrayList<>()));
     }
 
